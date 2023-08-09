@@ -17,7 +17,7 @@ const RestaurantCard = (props) => {
       const images = data.payload.images;
       setImage((prev) => ({ ...prev, images }));
     });
-  }, [props.photos]);
+  }, [dispatch, props.photos]);
   return (
     <Link to={`/restaurant/${props._id}/overview`}>
       <div className="bg-white p-4 w-full rounded-2xl transition duration-700 ease-in-out  sm:shadow-md md:shadow-none hover:drop-shadow-lg">

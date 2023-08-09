@@ -33,7 +33,7 @@ const OrderOnline = () => {
       dispatch(getFoodList(restaurant.menu)).then((data) => {
         setMenu(data.payload.menus.menus);
       });
-  }, [restaurant]);
+  }, [dispatch, restaurant]);
 
   return (
     <>

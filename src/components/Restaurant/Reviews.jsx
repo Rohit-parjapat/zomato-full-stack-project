@@ -23,7 +23,7 @@ const Reviews = () => {
     dispatch(getReview(id)).then((data) => {
       setReviews(data.payload.reviews);
     });
-  }, []);
+  }, [dispatch, id]);
 
   useEffect(() => {
     if (updatedReviews) {

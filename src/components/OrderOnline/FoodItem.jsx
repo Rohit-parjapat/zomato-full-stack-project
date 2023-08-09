@@ -32,7 +32,7 @@ const FoodItem = (props) => {
           }
         });
       });
-  }, [cart]);
+  }, [dispatch, props._id, cart]);
 
   const addFoodToCart = () => {
     dispatch(addToCart({ ...food, quantity: 1, totalPrice: food.price }));

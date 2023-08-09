@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
     dispatch(getMySelf());
     dispatch(getCart());
-  }, [localStorage]);
+  });
 
   return (
     <>

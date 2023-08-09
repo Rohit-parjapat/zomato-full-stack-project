@@ -14,7 +14,7 @@ const GoogleAuth = () => {
     if (token) {
       dispatch(googleAuth(token)).then(() => navigate("/delivery"));
     }
-  }, [token]);
+  }, [dispatch, token, navigate]);
 
   return <div>Loading, Please Wait...</div>;
 };

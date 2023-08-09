@@ -48,7 +48,7 @@ const Overview = () => {
         setReviews(data.payload.reviews);
       });
     }
-  }, [reduxState]);
+  }, [dispatch, reduxState]);
 
   const slideConfig = {
     slidesPerView: 1,

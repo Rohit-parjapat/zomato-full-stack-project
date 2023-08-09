@@ -30,7 +30,7 @@ const Photos = () => {
         setPhotos(images);
       });
     }
-  }, [reduxState]);
+  }, [dispatch, reduxState]);
 
   return (
     <>

@@ -44,7 +44,7 @@ const RestaurantLayout = ({ children: Component, ...props }) => {
         }));
       });
     });
-  }, []);
+  }, [dispatch, id]);
 
   return (
     <>

@@ -23,7 +23,7 @@ const Menu = () => {
         setMenus(images);
       });
     }
-  }, [reduxState]);
+  }, [dispatch, reduxState]);
 
   return (
     <div className="flex flex-wrap gap-3">
