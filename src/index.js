@@ -29,7 +29,7 @@ const zomato = express();
 privateRouteConfig(passport);
 googleAuthConfig(passport);
 
-zomato.use(cors({ origin: "http://localhost:3000" }));
+zomato.use(cors({ origin: "https://zomato-cl.netlify.app/" }));
 zomato.use(helmet());
 zomato.use(express.json());
 zomato.use(
