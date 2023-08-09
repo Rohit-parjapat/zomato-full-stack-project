@@ -1,14 +1,10 @@
-export const API_URL = window.location.hostname.includes(
-  "https://zomato-cl.netlify.app/"
-)
-  ? "https://poised-yak-hose.cyclic.app"
-  : "/node";
+export const API_URL = window.location.hostname.includes("localhost")
+  ? "http://localhost:4000"
+  : "https://poised-yak-hose.cyclic.app/";
 
-export const CLIENT_URL = window.location.hostname.includes(
-  "https://zomato-cl.netlify.app/"
-)
-  ? "hhttps://zomato-cl.netlify.app/"
-  : "/";
+export const CLIENT_URL = window.location.hostname.includes("localhost")
+  ? "http://localhost:3000"
+  : "https://zomato-cl.netlify.app/delivery";
 
 // module.exports = API_URL;
 // module.exports = CLIENT_URL;
