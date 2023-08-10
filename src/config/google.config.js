@@ -10,7 +10,7 @@ export default (passport) => {
       {
         clientID: process.env.GOOGLE_CLIENT_ID,
         clientSecret: process.env.GOOGLE_SECRET_ID,
-        callbackURL: `https://zomato-cl.netlify.app/auth/google/callback`,
+        callbackURL: `https://poised-yak-hose.cyclic.app/auth/google/callback`,
       },
 
       async (accessToken, refreshToken, profile, done) => {
